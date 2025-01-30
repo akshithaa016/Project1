@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interia</title>
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="common-style.css">
+    <link rel="stylesheet" href="book-style.css">
+    <link rel="shortcut icon" href="source/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="book-code.js"></script>
+    <script src="code.js"></script>
+
+    <div class="banner">
+        <div class="navbar">
+            <img onclick="btn('index.html');" src="source/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Get Quote</a></li>
+                <li><a href="design.html">Design ideas</a></li>
+                <li><a href="how.html">How It Works?</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>TALK TO A DESIGNER</h1>
+        </div>
+    </div>
+
+    <div class="up" onclick="totop();">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <div class="m1">
+        <div class="d1">
+            <div class="final">
+                <div class="form" id="frm">
+                    <form action="form.php" method="GET">
+                        <input class="inp" id="nam" type="text" name="name" autocomplete="off" required>
+                        <label class="lab" id="lab_nam" for="name">
+                        <span class="spn" id="content-name">Name</span></label>
+                        
+                        <input class="inp" id="email" type="text" name="email" autocomplete="off" required>
+                        <label class="lab" id="lab_email" for="email">
+                        <span class="spn" id="content-email">Email</span></label>
+                        
+                        <input class="inp" id="num" type="text" name="num" min="5" max="10" autocomplete="off" required>
+                        <label class="lab" id="lab_num" for="num">
+                        <span class="spn" id="content-num">Mobile Number</span></label>
+                        
+                        <div>
+                            <input type="checkbox" id="whatsapp" checked>
+                            <label id="lab_chk" for="whatsapp">Send me updates on Whatsapp</label>
+                        </div>
+            
+                        <input class="inp" id="prop" type="text" name="prop" autocomplete="off" required>
+                        <label class="lab" id="lab_prop" for="prop">
+                        <span class="spn" id="content-prop">Looking For...</span></label>
+                    </form>
+                        <button onclick="frmsbm();" id="sub-btn">BOOK ONLINE CONSULTATION</button>
+                </div>
+                <div>
+                    <h2 id="subm">Your details are submitted. <br> Our staff will contact you soon.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m2">
+        <div class="t2">
+            <h1>Superior interiors</h1>
+            <p>With stunning designs and professional on-site services, we make dream homes come alive.</p>
+        </div>
+        <div class="d2">
+            <div onclick="btn('show.html?topic=master-bedroom');">
+                <img src="source/book-m2-1.jpg">
+                <h3>Bedroom</h3>
+            </div>
+            <div onclick="btn('show.html?topic=dining-room');">
+                <img src="source/book-m2-2.jpg">
+                <h3>Dining Room</h3>
+            </div>
+            <div onclick="btn('show.html?topic=living-room');">
+                <img src="source/book-m2-3.jpg">
+                <h3>Living Room</h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-last">
+        <div class="last">
+            <div>
+                <h1>Your dream home is just a click away</h1>
+                <button onclick="btn('#');">GET STARTED</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="ftr-m">
+            <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="design.html">Book A Design</a></li>
+                        <li><a href="how.html">How It Works?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
